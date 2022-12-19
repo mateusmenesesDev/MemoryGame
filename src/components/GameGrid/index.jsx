@@ -1,3 +1,4 @@
+import { InfoBox } from '../infoBox';
 import { ImageElement } from './ImageElement';
 
 export function GameGrid() {
@@ -16,6 +17,10 @@ export function GameGrid() {
         <ImageElement />
         <ImageElement />
         <ImageElement />
+      </div>
+      <div className='flex gap-5 justify-center my-5'>
+        <InfoBox info={'0:00'}>Time</InfoBox>
+        <InfoBox info={'0'}>Moves</InfoBox>
       </div>
     </div>
   );
